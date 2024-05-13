@@ -1,0 +1,58 @@
+* {
+    primary: #0F1035;
+    primary-light: #365486;
+    secondary: #7FC7D9;
+    secondary-light: #DCF2F1;
+}
+
+.button {
+    -fx-pref-width: 120px;
+}
+
+.button:hover, .button:focused {
+    -fx-background-color : primary;
+    -fx-text-fill: secondary-light;
+}
+
+.dialog {
+    -fx-pref-width: 600px;
+}
+
+.dialog-icon {
+    -fx-pref-width: 160px;
+    -fx-alignment: top-center;
+    -fx-padding: 50 0 0 0;
+    -fx-background-color: primary;
+}
+
+.dialog-icon SVGPath {
+    -fx-fill: secondary-light;
+}
+
+.dialog-body {
+    -fx-padding: 20px;
+    -fx-alignment: center-left;
+}
+
+.dialog-title {
+    -fx-font-size: 24px;
+}
+
+.dialog-message-box {
+    -fx-padding: 10 0 20 0;
+    -fx-spacing: 5;
+}
+
+.dialog-input-box {
+    -fx-spacing: 5;
+}
+
+.dialog-message-box > Label {
+    -fx-font-size: 18px;
+}
+
+.dialog-button-box {
+    -fx-alignment: center-right;
+    -fx-spacing: 10px;
+}
+

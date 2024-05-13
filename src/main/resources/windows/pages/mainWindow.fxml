@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="main-frame" stylesheets="@../css/mainWindow.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.data.dashboardNotes.controllers.MainWindowController">
+    <children>
+        <VBox fx:id="sideBar" styleClass="side-bar">
+            <children>
+                <VBox id="DEVICES" onMouseClicked="#clickSideBarItem" styleClass="side-bar-menu">
+                    <children>
+                        <SVGPath content="M22 2l-10 10h-6l-6 8c0 0 6.357-1.77 10.065-0.94l-10.065 12.94 13.184-10.255c1.839 4.208-1.184 10.255-1.184 10.255l8-6v-6l10-10 2-10-10 2z" />
+                        <Label text="ИЗДЕЛИЯ" />
+                    </children>
+                </VBox>
+                <VBox id="STATISTIC" onMouseClicked="#clickSideBarItem" styleClass="side-bar-menu">
+                    <children>
+                        <SVGPath content="M0 26h32v4h-32zM4 18h4v6h-4zM10 10h4v14h-4zM16 16h4v8h-4zM22 4h4v20h-4z" />
+                        <Label text="СТАТИСТИКА" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <StackPane fx:id="contentView" prefHeight="150.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+    </children>
+</HBox>

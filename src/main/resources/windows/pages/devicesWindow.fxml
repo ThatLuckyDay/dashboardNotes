@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="content-view" stylesheets="@../css/contentView.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.data.dashboardNotes.controllers.DevicesWindowController">
+    <children>
+        <HBox styleClass="content-view-header" VBox.vgrow="NEVER">
+            <children>
+                <Label fx:id="title" styleClass="title" text="ИЗДЕЛИЯ" />
+            </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </HBox>
+      <HBox styleClass="content-view-body" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" styleClass="scrollPane" HBox.hgrow="ALWAYS">
+               <content>
+                    <VBox fx:id="devicesBox" styleClass="devices" stylesheets="@../css/contentView.css">
+                        <children>
+                            <HBox accessibleRole="NODE" styleClass="devices-item" VBox.vgrow="NEVER">
+                                <children>
+                                    <SVGPath content="M30.5 0h-12c-0.825 0-1.977 0.477-2.561 1.061l-14.879 14.879c-0.583 0.583-0.583 1.538 0 2.121l12.879 12.879c0.583 0.583 1.538 0.583 2.121 0l14.879-14.879c0.583-0.583 1.061-1.736 1.061-2.561v-12c0-0.825-0.675-1.5-1.5-1.5zM23 12c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+                                    <Label text="Label" />
+                                </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                            </HBox>
+                        </children>
+                    </VBox>
+               </content>
+            </ScrollPane>
+            <VBox styleClass="actions" HBox.hgrow="NEVER">
+               <children>
+                  <Label onMouseClicked="#createDevice" styleClass="actions-item" text="Создать" />
+                  <Label onMouseClicked="#editDevice" styleClass="actions-item" text="Изменить" VBox.vgrow="ALWAYS" />
+                  <Label onMouseClicked="#deleteDevice" styleClass="actions-item" text="Удалить" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</VBox>
