@@ -69,26 +69,6 @@
                               <Insets />
                            </opaqueInsets>
                         </TreeView>
-                        <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" VBox.vgrow="NEVER">
-                           <children>
-                              <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#create_type_button" prefHeight="30.0" prefWidth="30.0" text="+">
-                                 <HBox.margin>
-                                    <Insets />
-                                 </HBox.margin>
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Button>
-                              <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteDeviceButton" prefHeight="30.0" prefWidth="30.0" text="-">
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Button>
-                           </children>
-                        </HBox>
                      </children>
                      <opaqueInsets>
                         <Insets />

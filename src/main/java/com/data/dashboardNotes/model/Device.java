@@ -25,6 +25,9 @@ public class Device {
     @Column(name = "CODE")
     private String code;
 
+    @Column(name = "REMARK")
+    private String remark;
+
     @OneToMany(mappedBy = "device")
     private List<Sample> samples;
 }

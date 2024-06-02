@@ -39,4 +39,10 @@ public class DeviceService {
             deviceRepository.delete(device);
         }
     }
+
+    public void deleteDevice(Device device) {
+        if (device != null) {
+            deviceRepository.delete(device);
+        }
+    }
 }

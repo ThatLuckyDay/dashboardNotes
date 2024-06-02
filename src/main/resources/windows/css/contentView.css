@@ -13,13 +13,11 @@
 }
 
 .content-view-header {
-    -fx-padding: 40;
+    -fx-padding: 20;
 }
 
 .content-view-header .title {
     -fx-font-size: 24;
-    -fx-border-width: 0 0 5 0;
-    -fx-border-color: secondary;
 }
 
  .content-view-body {
@@ -53,15 +51,20 @@
 }
 
 .content-view-body .devices {
-    -fx-padding: 0 20 0 20;
-    -fx-spacing: 10;
+    -fx-spacing: 20;
+}
+
+.devices-item:hover .label {
+    -fx-text-fill: primary-light;
 }
 
 .devices-item {
     -fx-alignment: center-left;
-    -fx-padding: 20 20 20 0;
+    -fx-background-radius: 15;
+    -fx-padding: 20;
     -fx-spacing: 10;
-    -fx-border-width: 0 0 2 0;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
     -fx-border-color: secondary;
 }
 
